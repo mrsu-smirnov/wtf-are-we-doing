@@ -24,6 +24,41 @@ you honestly whether you got it right.
 Written for people who work with coding agents without being programmers,
 but useful to anyone who came back to a long session and lost the thread.
 
+## Example
+
+Someone is building a small online shop for handmade candles. For half an
+hour the agent has been changing something in checkout, and words like
+"stock", "transaction" and "race condition" keep flashing by. They type
+`/wtf-are-we-doing`:
+
+> **What we are doing and why.** We are making sure the last candle can't
+> be sold twice. Right now, if two customers check out at almost the same
+> moment, both pay, but there is only one candle.
+>
+> **What it is like.** A market stall and a notebook where the seller
+> writes down what is left. A customer asks for a candle — the seller
+> checks the notebook, sells it, crosses it out. The trouble is we have two
+> sellers sharing one notebook: both looked, both saw "1 left", both sold.
+>
+> **Where the analogy lies.** Real sellers would notice each other. On the
+> site, two orders arrive a fraction of a second apart and nobody sees
+> anybody — so we need a rule "while one is writing in the notebook, the
+> other waits", not attentiveness. And the notebook here is the database
+> (the place where the site keeps stock counts); it can enforce that rule
+> by itself if asked.
+>
+> **What is already decided — leave it alone.** Payment stays with the
+> current payment service. Stock is counted in one place, not two.
+>
+> **What is up to you now.** What the second customer should see:
+> (a) "Sold out" before paying — honest, but they may be disappointed;
+> (b) accept both orders and make another candle within a week — more
+> sales, but you have to keep up. I recommend (a): no refunds needed.
+>
+> Check question: a customer put the last candle in their cart and left for
+> an hour to have tea. Do you think the candle is theirs during that hour,
+> or still for sale?
+
 ## Install
 
 The skill is written for Claude Code: it goes into the `.claude/skills`
