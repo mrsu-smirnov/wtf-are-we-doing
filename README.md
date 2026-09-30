@@ -6,16 +6,16 @@ A skill for AI coding agents, for the moment when you are deep in a
 session with an agent and no longer understand what is going on.
 
 Type `/wtf-are-we-doing` and the agent stops to explain **the current
-session** — not the whole project — in five short parts:
+session**, not the whole project, in five short parts:
 
-1. **What we are doing and why** — from the point of view of whoever will
+1. **What we are doing and why**, from the point of view of whoever will
    use the result.
-2. **What it is like** — one everyday analogy, carried through the whole
+2. **What it is like:** one everyday analogy, carried through the whole
    situation.
-3. **Where the analogy lies** — where the everyday picture breaks, and why
+3. **Where the analogy lies:** where the everyday picture breaks, and why
    that matters right now.
-4. **What is already decided** — so you don't reopen settled questions.
-5. **What is up to you now** — the options and one recommendation, or "you
+4. **What is already decided**, so you don't reopen settled questions.
+5. **What is up to you now:** the options and one recommendation, or "you
    don't need to do anything, I am doing X".
 
 It ends with one question that checks you actually understood, and tells
@@ -36,23 +36,23 @@ hour the agent has been changing something in checkout, and words like
 > moment, both pay, but there is only one candle.
 >
 > **What it is like.** A market stall and a notebook where the seller
-> writes down what is left. A customer asks for a candle — the seller
+> writes down what is left. A customer asks for a candle, the seller
 > checks the notebook, sells it, crosses it out. The trouble is we have two
 > sellers sharing one notebook: both looked, both saw "1 left", both sold.
 >
 > **Where the analogy lies.** Real sellers would notice each other. On the
 > site, two orders arrive a fraction of a second apart and nobody sees
-> anybody — so we need a rule "while one is writing in the notebook, the
-> other waits", not attentiveness. And the notebook here is the database
-> (the place where the site keeps stock counts); it can enforce that rule
-> by itself if asked.
+> anybody. So we need a rule "while one is writing in the notebook, the
+> other waits", not attentiveness. And the notebook here is really the
+> database (the place where the site keeps stock counts); it can enforce
+> that rule by itself if asked.
 >
-> **What is already decided — leave it alone.** Payment stays with the
+> **What is already decided, leave it alone.** Payment stays with the
 > current payment service. Stock is counted in one place, not two.
 >
 > **What is up to you now.** What the second customer should see:
-> (a) "Sold out" before paying — honest, but they may be disappointed;
-> (b) accept both orders and make another candle within a week — more
+> (a) "Sold out" before paying: honest, but they may be disappointed;
+> (b) accept both orders and make another candle within a week: more
 > sales, but you have to keep up. I recommend (a): no refunds needed.
 >
 > Check question: a customer put the last candle in their cart and left for
@@ -62,7 +62,7 @@ hour the agent has been changing something in checkout, and words like
 ## Install
 
 The skill is written for Claude Code: it goes into the `.claude/skills`
-folder. Pick one language — both versions use the same command.
+folder. Pick one language; both versions use the same command.
 
 macOS / Linux:
 
@@ -81,7 +81,7 @@ Copy-Item -Recurse wtf-are-we-doing\en\wtf-are-we-doing "$HOME\.claude\skills\"
 For the Russian version, use `ru/` instead of `en/`. Restart Claude Code,
 then type `/wtf-are-we-doing`.
 
-The skill never triggers on its own — only when you call it.
+The skill never triggers on its own, only when you call it.
 
 ## How it differs from similar skills
 
