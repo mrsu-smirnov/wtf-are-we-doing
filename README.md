@@ -81,6 +81,11 @@ Copy-Item -Recurse wtf-are-we-doing\en\wtf-are-we-doing "$HOME\.claude\skills\"
 For the Russian version, use `ru/` instead of `en/`. Restart Claude Code,
 then type `/wtf-are-we-doing`.
 
+Other agents that read skills in the `SKILL.md` format (Codex, bb and
+others) use the same folder: copy `en/wtf-are-we-doing` into your agent's
+skills folder. In bb, that is the `skills` folder inside the bb data
+folder.
+
 The skill never triggers on its own, only when you call it.
 
 ## How it differs from similar skills

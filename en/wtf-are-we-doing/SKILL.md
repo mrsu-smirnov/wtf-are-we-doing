@@ -1,6 +1,6 @@
 ---
 name: wtf-are-we-doing
-description: Explain, through an everyday analogy, what is happening in the CURRENT session: what we are doing, why, what is already decided, and which decision is now up to the user. Invoked ONLY explicitly with /wtf-are-we-doing; never triggers on its own.
+description: "Explain, through an everyday analogy, what is happening in the CURRENT session: what we are doing, why, what is already decided, and which decision is now up to the user. Invoked ONLY explicitly with /wtf-are-we-doing; never triggers on its own."
 disable-model-invocation: true
 ---
 
